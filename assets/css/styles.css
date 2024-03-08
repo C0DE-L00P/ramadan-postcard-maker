@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'Janna-LT';
+  font-weight: 700;
+  src: url(../font/JannaLT_B.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Janna-LT';
+  font-weight: 400;
+  src: url(../font/JannaLT_R.woff2) format('woff2');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Janna-LT', sans-serif;
+  color: white;
+}
+
+small {
+  display: block;
+  font-weight: 700;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+body {
+  background: linear-gradient(to bottom, #14508a, #01748e);
+  min-height: 100vh;
+}
+
+.container {
+  background: linear-gradient(to bottom, #14508a, #01748e);
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  max-width: 600px;
+  min-height: 100vh;
+  margin-inline: auto;
+  position: relative;
+}
+
+input {
+  margin-top: 4px;
+  border: none;
+  background-color: white;
+  color: #14508a;
+  text-align: center;
+  padding-block: 8px;
+  padding-inline: 28px;
+  border-radius: 16px 0;
+  min-width: 180px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+form {
+  position: relative;
+  text-align: center;
+  width: max-content;
+  margin-inline: auto;
+}
+
+form>* {
+  position: relative;
+  z-index: 2;
+}
+
+form>button {
+  margin-inline-start: auto;
+  display: block;
+  background: #14528b;
+  border-radius: 0 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 8px;
+  padding-inline: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+form>button:hover {
+  background: #12497d;
+}
+
+form>button:active {
+  background: #10406e;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  gap: 8px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-inline: 32px;
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer a:hover{
+  filter: brightness(0.85)
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+footer i {
+  display: initial;
+}
+
+@media screen and (max-width: 500px) {
+  footer i {
+    display: none;
+  }
+}
+
+.blink{
+  animation: flashlight 1s linear forwards;
+}
+
+.frontscreen{
+  background: white;
+  opacity: 0;
+  z-index: 3;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.modal-btns{
+  background-color: rgba(0, 0, 0, 0.604);
+  padding-inline: 24px;
+  padding-block: 6px;
+  border-radius: 8px 0 0 0;
+  width: max-content;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.modal-btns button, .modal-btns a{
+  all: unset;
+  background: transparent;
+  margin-inline-end: 8px; 
+  color: white;
+  cursor: pointer;
+}
+
+.modal-btns button:hover{
+  filter: brightness(0.8);
+}
+.modal-btns button:active{
+  filter: brightness(0.7);
+}
+
+#modal{
+  background: rgba(0, 0, 0, 0.396);
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 5;
+  place-content: center;
+}
+#modal > .card{
+  margin-inline: auto;
+  height: max-content;
+  max-width: 90%;
+  position: relative;
+  cursor: initial;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#modal > .card canvas{
+  max-width: 100%;
+  object-fit: contain;
+}
+.signature{
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+@keyframes flashlight {
+  55%,
+  70% {
+    opacity: 0;
+  }
+
+  56% {
+    opacity: 1;
+  }
+}
+
+/* LOADER */
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  background: #fbfbfb;
+  box-shadow: 0 0 60px 15px #25b09b;
+  transform: translate(-80px);
+  clip-path: inset(0);
+  animation:
+    l4-1 0.5s ease-in-out infinite alternate,
+    l4-2 1s   ease-in-out infinite;
+}
+@keyframes l4-1 {
+  100% {transform: translateX(80px)}
+}
+@keyframes l4-2 {
+   33% {clip-path: inset(0 0 0 -100px)}
+   50% {clip-path: inset(0 0 0 0)     }
+   83% {clip-path: inset(0 -100px 0 0)}
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تجمع الباحة الصحي</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="frontscreen"></div>
+  <section class="container" id="the_canvas_element_id">
+    <header style="display: flex; align-items:center; justify-content: space-between;">
+      <div style="display: flex; gap: 8px; align-items: center; padding-inline: 8px;">
+        <img src="./assets/images/Asset 1.webp" alt="" style="height: 80px; object-fit: contain;">
+        <i style="display: inline-block; width: 2px; background-color: white; height: 70px; color: transparent; opacity: 0.6; margin-inline-end: 8px;">-</i>
+        <img src="./assets/images/Asset 2.webp" alt="" style="width: 80px; aspect-ratio: 1;object-fit: contain;">
+        <div style="color: white; text-align: justify;text-justify: inter-word;">
+          <small style="margin-bottom: 4px;">تجمع الباحة الصحي</small>
+          <small>AL BAHA HEALTH CLUSTER</small>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/images/Asset 5.webp" alt="" style="height: 240px; object-fit: contain; position: absolute; top: 0; left:12px;">
+      </div>
+    </header>
+    <main style="  text-align: justify;
+    text-justify: inter-word;">
+      <div style="text-align: center; position: relative">
+        <img src="./assets/images/Asset 3.webp" alt="" style="width: 240px; aspect-ratio: 1;object-fit: contain;">
+        <img src="./assets/images/Asset 4.webp" alt="" style="width: 440px; aspect-ratio: 1;object-fit: contain; position: absolute; top: 0px; left: 50%; transform:  translateX(-50%); z-index: 1;">
+      </div>
+      <p>أهنئكم بحلول شهر رمضان المبارك</p>
+      <p>أعاننا الله على صيامه وقيامه</p>
+
+      <section style="position: relative; text-align: center;">
+        <p style="margin-top: 24px;">محبكم</p>
+        <div id="div_res" style="display: none;">
+          <p style="margin-top: 4px; font-weight: 700;" id="name_res"></p>
+          <br><br>
+        </div>
+        <form onsubmit="makePostcard(event)" method="post">
+          <input type="text" name="name" id="inp_name">
+          <button disabled="true" id="formBtn">توقيع</button>
+        </form>
+      </section>
+    </main>
+    <footer dir="ltr" style="margin-top: 40px;">
+      <span>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2m5.939 7.713v.646a.37.37 0 0 1-.38.37a5.364 5.364 0 0 1-2.903-1.108v4.728a3.938 3.938 0 0 1-1.18 2.81a4.011 4.011 0 0 1-2.87 1.17a4.103 4.103 0 0 1-2.862-1.17a3.98 3.98 0 0 1-1.026-3.805c.159-.642.48-1.232.933-1.713a3.58 3.58 0 0 1 2.79-1.313h.82v1.703a.348.348 0 0 1-.39.348a1.918 1.918 0 0 0-1.23 3.631c.27.155.572.246.882.267c.24.01.48-.02.708-.092a1.928 1.928 0 0 0 1.313-1.816V5.754a.359.359 0 0 1 .359-.36h1.415a.359.359 0 0 1 .359.34a3.303 3.303 0 0 0 1.282 2.245a3.25 3.25 0 0 0 1.641.636a.37.37 0 0 1 .338.35z" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 20 20">
+            <path fill="currentColor" d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 1536 1536">
+            <path fill="currentColor" d="M1279 1020q0-22-22-27q-67-15-118-59t-80-108q-7-19-7-25q0-15 19.5-26t43-17t43-20.5T1177 701q0-19-18.5-31.5T1120 657q-12 0-32 8t-31 8q-4 0-12-2q5-95 5-114q0-79-17-114q-36-78-103-121.5T778 278q-199 0-275 165q-17 35-17 114q0 19 5 114q-4 2-14 2q-12 0-32-7.5t-30-7.5q-21 0-38.5 12T359 702q0 21 19.5 35.5t43 20.5t43 17t19.5 26q0 6-7 25q-64 138-198 167q-22 5-22 27q0 46 137 68q2 5 6 26t11.5 30.5t23.5 9.5q12 0 37.5-4.5t39.5-4.5q35 0 67 15t54 32.5t57.5 32.5t76.5 15q43 0 79-15t57.5-32.5T957 1160t67-15q14 0 39.5 4t38.5 4q16 0 23-10t11-30t6-25q137-22 137-68m257-252q0 209-103 385.5T1153.5 1433T768 1536t-385.5-103T103 1153.5T0 768t103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 1024 1024">
+            <path fill="currentColor" d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64m215.3 337.7c.3 4.7.3 9.6.3 14.4c0 146.8-111.8 315.9-316.1 315.9c-63 0-121.4-18.3-170.6-49.8c9 1 17.6 1.4 26.8 1.4c52 0 99.8-17.6 137.9-47.4c-48.8-1-89.8-33-103.8-77c17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35c25.1-4.7 49.1-14.1 70.5-26.7c-8.3 25.7-25.7 47.4-48.8 61.1c22.4-2.4 44-8.6 64-17.3c-15.1 22.2-34 41.9-55.7 57.6" />
+          </svg></a>
+        <span style="letter-spacing: 2px;">BAHA_CLUSTER</span>
+      </span>
+      <i>|</i>
+      <a href="mailto:healthcluster-baha@moh.gov.sa">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 16 16">
+          <path fill="currentColor" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4 4h8c.143 0 .281.031.409.088L8 9.231L3.591 4.088A.982.982 0 0 1 4 4m-1 7V5l.002-.063l2.932 3.421l-2.9 2.9A.967.967 0 0 1 3 11m9 1H4c-.088 0-.175-.012-.258-.034L6.588 9.12l1.413 1.648L9.414 9.12l2.846 2.846a.967.967 0 0 1-.258.034zm1-1c0 .088-.012.175-.034.258l-2.9-2.9l2.932-3.421L13 5z" />
+        </svg>
+        <span style="margin-inline-start: 4px;">HEAELTHCLUSTER-BAHA@MOH.GOV.SA</span>
+      </a>
+    </footer>
+  </section>
+
+  <div class="loader" style="position: absolute; bottom: 10%; left: 47%; transform: translateX(-50%); opacity: 0;"></div>
+
+  <div id="modal" onclick="closeModal()">
+    <div class="card" onclick="event.stopPropagation()">
+      <div class="card-img"></div>
+      <div class="modal-btns">
+        <!-- <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M10 3H4.9S0 3 0 8c0 3.9 3 8 3 8S1.3 9 4.8 9H10v3l6-6l-6-6z" />
+          </svg>
+          مشاركة
+          </button> -->
+        <a id="download_link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
+          </svg>
+          تنزيل
+        </a>
+        <button onclick="closeModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+              <path fill="currentColor" d="m12 13.414l5.657 5.657a1 1 0 0 0 1.414-1.414L13.414 12l5.657-5.657a1 1 0 0 0-1.414-1.414L12 10.586L6.343 4.929A1 1 0 0 0 4.93 6.343L10.586 12l-5.657 5.657a1 1 0 1 0 1.414 1.414z" />
+            </g>
+          </svg>
+          اغلاق
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <small class="signature">
+    By: saifbinsahab
+  </small>
+  <audio autoplay style="display: none;">
+    <source src="./assets/audio/bg_music_ramadan.ogg" type="audio/ogg">
+    </audio>
+
+  <script src="./assets/js/html2canvas.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
